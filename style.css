@@ -45,6 +45,7 @@ a:link    {
     color: white;
 }
 
-form {
-	
+.search {
+	width: 200px;
+	height 90px;
 }

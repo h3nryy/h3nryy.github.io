@@ -1,34 +1,46 @@
 body {
-    background-image: url(background4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.text {
-    font-family: monospace;
-    color: black;
-}
-
-.link {
-    position: relative;
-    font-size: 24px;
-}
-
-.transparent-box {
-    background-color: #000000;
-    opacity: 0.5;
-    border: 2px solid red;
-}
-
-.transparent-box p {
-    font-size: 24px;
-    font-family: Courier;
-    margin: 20%;
+    background-color: #2b2d42;
     text-align: center;
-    border: 2px solid yellow;
 }
+/* 2b2d42 */
+div {
+    font-family: Courier;
+    font-size: 16px;
+    display: block;
+    line-height: 90px;
+    margin: 0px auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #161925;
+}
+
+.blueish {
+    background-color: #235789;
+}
+
+.redish {
+    background-color: #c1292e;
+}
+
+a:link    {
+    /* Applies to all unvisited links */
+    text-decoration:  none;
+    color:            #ffffff;
+} 
+  a:visited {
+    /* Applies to all visited links */
+    text-decoration:  none;
+    color:            #ffffff;
+} 
+  a:hover   {
+    /* Applies to links under the pointer */
+    text-decoration:  underline;
+    background-color: #e8e7e6;
+    color:            rgb(22, 25, 37);
+} 
+  a:active  {
+    /* Applies to activated links */
+    text-decoration:  underline;
+    background-color: black;
+    color: white;
+} 

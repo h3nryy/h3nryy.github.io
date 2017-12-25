@@ -8,11 +8,12 @@ body {
 
 div {
 	margin: 0px auto;
+	font-size: 24px;
 }
 
 .container {
     font-family: Courier;
-    font-size: 20px;
+    font-size: 28px;
     display: block;
     line-height: 90px;
     margin: 0px auto;	
@@ -24,6 +25,7 @@ div {
 	margin-right: 25%;
 	margin-bottom: 5px;
 	background-color: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
 }
 
 /* Hyperlink properties */
@@ -39,7 +41,7 @@ a:link    {
 } 
   a:hover   {
     /* Applies to links under the pointer */
-    text-decoration:  underline;
+    text-decoration:  none;
     background-color: #e8e7e6;
     color:            rgb(22, 25, 37);
 } 
@@ -52,25 +54,26 @@ a:link    {
 
 /* Search box specifics */
 .search-box {
-	border: 1px solid;
+	border: none;
 	color: #ffffff;
 	background-color: rgba(0, 0, 0, 0);
 	width: 50%;
 	text-align: left;
 	padding: 10px;
-	font-size: 18px;
+	font-size: 24px;
 	font-family: Courier;
-	align: center;
+	align: left;
+	margin: auto;
+}
+
+input::placeholder {
+	text-align: left;
 }
 
 #search-bar {
 	background: none;
 	display: block;
-}
-
-input[type="text"] {
-	margin: auto;
-}
+}	
 
 button {
 	border: 1px solid;

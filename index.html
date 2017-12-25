@@ -6,41 +6,31 @@
         <link href="style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <div class="blueish">
+	<div class="container">
+		<div class="links" id="search-bar">
+			<form action="https://www.google.com/search" method="get">
+				<input class="search-box" type="text" name="q" id="q" autofocus>
+				<!-- <input type="submit" value="&#43"> -->
+				<button type="submit">&#63;</button>
+			</form>
+		</div>
+		<br />
+        <div class="links">
             <a href="http://www.google.com/">Google |</a>
             <a href="https://mail.google.com/">Gmail |</a>
             <a href="https://drive.google.com/">Google Drive |</a>
             <a href="https://www.google.com/maps">Google Maps </a>
         </div>
-        <br />
-        <div class="redish">
+        <div class="links">
             <a href="https://www.reddit.com/">Reddit |</a>
             <a href="https://www.reddit.com/r/navyseals">r/NavySEALS |</a>
             <a href="https://www.reddit.com/r/pararescue">r/Pararescue |</a>
             <a href="https://www.reddit.com/r/airforce">r/AirForce</a>
         </div>
-        <br />
-        <div>
+        <div class="links">
             <a href="https://www.youtube.com/feed/subscriptions">YouTube |</a>
             <a href="https://www.netflix.com">Netflix</a>
         </div>
-		<br />
-		<div>
-			<form action="https://www.google.com/search" method="get">
-				<input class="search" type="text" placeholder= "search" name="q" id="q" autofocus>
-				<input type="submit" value="Search">
-			</form>
-		</div>
-		
-<!--
-		<div class="container">
-			<div class="search">
-				<form action="https://www.google.com/search">
-					<input class="search-box" type="textbox" placeholder="Welcome back Master" autofocus>
-					<input type="submit" value="Search">
-				</form>
-			</div>
-		</div>
--->
+	</div>
     </body>
 </html>

@@ -1,27 +1,32 @@
 body {
-    background-color: #2b2d42;
+/*    background-color: #2b2d42; */
     text-align: center;
+	background: url("background4.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%, 100%;
 }
-/* 2b2d42 */
+
 div {
+	margin: 0px auto;
+}
+
+.container {
     font-family: Courier;
-    font-size: 16px;
+    font-size: 20px;
     display: block;
     line-height: 90px;
-    margin: 0px auto;
-    margin-left: 25%;
-    margin-right: 25%;
-    background-color: #161925;
+    margin: 0px auto;	
 }
 
-.blueish {
+.links {
     background-color: #235789;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 5px;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
-.redish {
-    background-color: #c1292e;
-}
-
+/* Hyperlink properties */
 a:link    {
     /* Applies to all unvisited links */
     text-decoration:  none;
@@ -45,7 +50,35 @@ a:link    {
     color: white;
 }
 
-.search {
-	width: 200px;
-	height 90px;
+/* Search box specifics */
+.search-box {
+	border: 1px solid;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0);
+	width: 50%;
+	text-align: left;
+	padding: 10px;
+	font-size: 18px;
+	font-family: Courier;
+	align: center;
+}
+
+#search-bar {
+	background: none;
+	display: block;
+}
+
+input[type="text"] {
+	margin: auto;
+}
+
+button {
+	border: 1px solid;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0);
+	font-family: Courier;
+	font-size: 18px;
+	text-align: center;
+	margin: 0px auto;
+	display: block;
 }

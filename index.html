@@ -8,15 +8,24 @@
     <body>
 	<div class="container">
 		<div class="links" id="search-bar">
+
+		<!-- search bar -->
 			<form action="https://www.google.com/search" method="get">
-				&#187;<input class="search-box" type="text" placeholder="&#63;" name="q" id="q" autofocus>
+				&#187;<input class="input-box" type="text" placeholder="&#63;" name="q" id="q" autofocus>
 				<!-- <input type="submit" value="&#43"> -->
 				<!-- <button type="submit">&#63;</button> -->
+			</form>
+
+		<!-- URL bar -->
+			<form class="links input-box" onSubmit="return process();">
+			&#36; <input class="input-box" type="text" name="url" id="url" placeholder="URL">
 			</form>
 		</div>
 		<br />
         <div class="links">
-            <a href="http://www.google.com/">Google</a>
+		
+		<!-- Google links -->
+		<a href="http://www.google.com/">Google</a>
 			&#215;
             <a href="https://mail.google.com/">Gmail</a>
 			&#215;
@@ -25,6 +34,8 @@
             <a href="https://www.google.com/maps">Google Maps </a>
         </div>
         <div class="links">
+		
+		<!-- Reddit links -->
             <a href="https://www.reddit.com/">Reddit</a>
 			&#215;
             <a href="https://www.reddit.com/r/navyseals">r/NavySEALS</a>
@@ -34,10 +45,23 @@
             <a href="https://www.reddit.com/r/airforce">r/AirForce</a>
         </div>
         <div class="links">
+		
+		<!-- Entertainment/extra links -->
             <a href="https://www.youtube.com/feed/subscriptions">YouTube</a>
 			&#215;
             <a href="https://www.netflix.com">Netflix</a>
         </div>
 	</div>
     </body>
+
+<!-- JS for URL input box -->
+<script>
+	function process()
+	{
+	var url="https://" + document.getElementById("url").value;
+	location.href=url;
+	return false;
+	}
+</script>	
+	
 </html>

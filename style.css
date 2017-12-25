@@ -52,8 +52,8 @@ a:link    {
     color: white;
 }
 
-/* Search box specifics */
-.search-box {
+/* Input box specifics */
+.input-box {
 	border: none;
 	color: #ffffff;
 	background-color: rgba(0, 0, 0, 0);
@@ -68,6 +68,7 @@ a:link    {
 
 input::placeholder {
 	text-align: left;
+	color: #ffffff;
 }
 
 #search-bar {

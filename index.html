@@ -17,15 +17,20 @@
 			</form>
 
 		<!-- URL bar -->
-			<form class="links input-box" onSubmit="return process();">
+			<form class="links input-box" onSubmit="return linkbar();">
 			&#36; <input class="input-box" type="text" name="url" id="url" placeholder="URL">
+			</form>
+			
+		<!-- Subreddit bar -->
+			<form class="links input-box" onSubmit="return redditbar();">
+			r&#47;<input class="input-box" type="text" name="subreddit" id="subreddit" placeholder="subreddit...">
 			</form>
 		</div>
 		<br />
         <div class="links">
 		
 		<!-- Google links -->
-		<a href="http://www.google.com/">Google</a>
+			<a href="http://www.google.com/">Google</a>
 			&#215;
             <a href="https://mail.google.com/">Gmail</a>
 			&#215;
@@ -52,15 +57,24 @@
             <a href="https://www.netflix.com">Netflix</a>
 			&#215;
 			<a href="https://www.github.com">GitHub</a>
+			&#215;
+			<a href="https://www.amazon.com">Amazon</a>
         </div>
 	</div>
     </body>
 
 <!-- JS for URL input box -->
 <script>
-	function process()
+	function linkbar()
 	{
 	var url="https://" + document.getElementById("url").value;
+	location.href=url;
+	return false;
+	}
+	
+	function redditbar()
+	{
+	var url="https://www.reddit.com/r/" + document.getElementById("subreddit").value;
 	location.href=url;
 	return false;
 	}

@@ -1,0 +1,43 @@
+body {
+	background: rgb(42, 42, 42);
+	color: rgb(209, 209, 209);
+}
+
+input[type="submit"] {
+	background: rgba(0, 0, 0, 0);
+	color: rgba(255, 255, 255, 1);
+	border: none;
+	padding: 10px;
+	font-size: 24px;
+	position: relative;
+	margin: 0px auto;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	/* background: rgb(15, 113, 115); */
+	/* background: rgb(209, 209, 209); */
+	background: rgb(255, 255, 255);
+	color: rgb(42, 42, 42);
+}
+
+input[type="submit"]:active {
+	/* background: rgb(240, 93, 94); */
+	background: rgb(209, 209, 209);
+}
+
+.container {
+	margin: 0px auto;
+	width: 960px;
+	height: 550px;	
+	position: relative;
+	/* background: #ffffff; */
+}
+
+.holder {
+	margin: auto;
+	top: 40%;
+	position: relative;
+	width: 550px;
+	/* background: #000000; */
+}

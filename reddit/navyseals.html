@@ -2,12 +2,29 @@
 
 <html>
 	<head>
-		<title>"lorem ipsum"</title>
+		<title>r/navyseals</title>
 	</head>
 	<link href="style.css" type="text/css" rel="stylesheet">
 	
 	<body>
 		<!-- start putting stuff here -->
 		<p>navyseals</p>
+		
+		<a href="https://www.reddit.com/r/navyseals/search?q=weekly+white+board&sort=new&restrict_sr=on&t=all">Weekly White Boards</a>
+		
+		<!-- search bar -->
+		<form onSubmit="return sealsearch();">
+		Search: <input class="search-box" type="text" name="url" id="search" placeholder="search...">
+		</form>
 	</body>
+	
+	<script>
+	function sealsearch()
+	{
+	var url="https://www.reddit.com/r/navyseals/search?q=" + document.getElementById("search").value + "&restrict_sr=on&sort=relevance&t=all";
+	location.href=url;
+	return false;
+	}
+	</script>
+	
 </html>

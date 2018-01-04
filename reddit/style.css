@@ -1,6 +1,6 @@
 body {
 	background: rgb(42, 42, 42);
-	color: rgb(209, 209, 209);
+	color: rgb(255, 255, 255);
 }
 
 input[type="submit"] {
@@ -15,14 +15,11 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	/* background: rgb(15, 113, 115); */
-	/* background: rgb(209, 209, 209); */
 	background: rgb(255, 255, 255);
 	color: rgb(42, 42, 42);
 }
 
 input[type="submit"]:active {
-	/* background: rgb(240, 93, 94); */
 	background: rgb(209, 209, 209);
 }
 
@@ -40,4 +37,23 @@ input[type="submit"]:active {
 	position: relative;
 	width: 550px;
 	/* background: #000000; */
+}
+
+a {
+	color: rgb(255, 255, 255);
+}
+
+a:hover {
+	background: rgb(255, 255, 255);
+	color: rgb(42, 42, 42);
+}
+
+a:active {
+	color: rgb(209, 209, 209);
+}
+
+.search-box {
+	background: none;
+	color: #ffffff;
+	border: none;
 }
